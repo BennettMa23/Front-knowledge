@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格增删改查</title>
+
+    <style>
+        table {
+            /* 单元格合并 */
+            border-collapse: collapse;
+            width: 100%;
+            /* 外边距 */
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            /* 内边距 */
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">表格的增删改查</h1>
+    <button onclick="addData()">新增联系人</button>
+    <!-- 添加 id 方便获取 -->
+    <table id="Table">
+        <tr>
+            <th>姓名</th>
+            <th>联系方式</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>坤坤</td>
+            <td>123456789</td>
+            <td>
+                <button onclick="editData(this)">编辑</button><button onclick="deleteData(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+    <script src="./JS/Table_exam.js"></script>
+</body>
+
+</html>
